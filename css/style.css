@@ -1,0 +1,167 @@
+header {
+    background-position: center;
+    background-size: cover;
+    height: 275px;
+    background-image: url("/img/header.jpeg");
+}
+header p {
+    margin-top: 14px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 16px;
+}
+header .img-overlay {
+    background: rgba(198, 108, 73, 0.3);
+    height: 100%;
+}
+.navbar {
+    background-color: rgba(247, 243, 243, 0) !important;
+    padding-left: 6px;
+    padding-top: 28px;
+}
+.navbar a {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+h1 {
+    padding-right: 4px;
+    padding-top: 33px;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.navbar-toggler {
+    border: none;
+}
+#about {
+    text-align: justify;
+    max-width: 312px;
+    margin: 0 auto;
+}
+p {
+    font-family: "Libre Franklin";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    color: #333333;
+}
+h2 {
+    font-family: "Libre Franklin", sans-serif;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333333;
+}
+#skills {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #fffaf2;
+}
+#skills img {
+    padding-bottom: 30px;
+    padding-right: 7px;
+}
+#skills h2 {
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.skills-exp {
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skills-exp ul {
+    padding-left: 0;
+}
+.skills-exp li {
+    display: flex;
+    justify-content: space-between;
+    min-width: 310px;
+}
+.progress {
+    width: 211px;
+    height: 18px;
+    background-color: #f5d6ab;
+    border-radius: 0;
+}
+.status {
+    height: 25px;
+    width: 66%;
+    background-color: #c66c49;
+}
+ul {
+    text-align: center;
+    margin: 0 auto;
+}
+.subtitle {
+    margin-bottom: 23px;
+}
+.header {
+    font-weight: 600;
+    margin-bottom: 42px;
+}
+.images {
+    padding-top: 25px;
+    max-width: 308px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.left-images {
+    padding-right: 5px;
+}
+.right-images {
+    padding-left: 5px;
+}
+.images img {
+    margin-bottom: 10px;
+}
+.images .img-pad {
+    margin-bottom: 15px;
+}
+#portfolio {
+    padding-bottom: 10px;
+}
+#portfolio h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+#portfolio p {
+    padding-top: 6px;
+    max-width: 308px;
+    margin: 0 auto;
+    line-height: 15px;
+    text-align: center;
+}
+
+footer {
+    padding-top: 5px;
+    background-color: #fffaf2;
+}
+.lists {
+    display: flex;
+}
+.lists ul {
+    padding-left: 40px;
+    list-style: none;
+    text-align: start;
+}
+.lists li {
+    margin-bottom: 20px;
+    font-family: "Libre Franklin";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
