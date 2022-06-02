@@ -1,8 +1,12 @@
+body {
+    font-family: "Libre Franklin", sans-serif;
+}
 header {
     background-position: center;
     background-size: cover;
-    height: 275px;
+    min-height: 275px;
     background-image: url("/img/header.jpeg");
+    height: 768px;
 }
 header p {
     margin-top: 14px;
@@ -10,45 +14,69 @@ header p {
     color: white;
     font-size: 13px;
     line-height: 16px;
+    margin-bottom: 36px;
 }
 header .img-overlay {
     text-align: center;
     background: rgba(198, 108, 73, 0.3);
+    min-height: 275px;
     height: 100%;
 }
-.navbar {
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0;
+}
+.nav {
     background-color: rgba(247, 243, 243, 0) !important;
     padding-left: 6px;
+    justify-content: center;
     padding-top: 28px;
 }
 .navbar a {
-    font-family: "Libre Franklin", sans-serif;
+    padding-top: 26px;
+    padding-bottom: 4px;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     color: white;
+    margin-right: 0;
 }
-.latest-works{
+button {
+    position: absolute;
+    left: 20px;
+    top: 34px;
+}
+.latest-works {
     color: white;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
 }
 h1 {
     padding-right: 4px;
     padding-top: 33px;
     text-align: center;
-    font-family: "Libre Franklin", sans-serif;
     color: white;
     font-size: 20px;
 }
 .navbar-toggler {
     border: none;
 }
+.description {
+    min-width: 210px;
+}
 #about {
     text-align: justify;
+    min-width: 312px;
+    padding-bottom: 5px;
+}
+#about p {
     max-width: 312px;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 p {
-    font-family: "Libre Franklin";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -57,21 +85,20 @@ p {
     color: #333333;
 }
 h2 {
-    font-family: "Libre Franklin", sans-serif;
+    font-size: 24px;
     margin-top: 25px;
     text-align: center;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     color: #333333;
 }
 #skills {
     padding-top: 20px;
-    padding-bottom: 5px;
     text-align: center;
     background-color: #fffaf2;
 }
 #skills img {
-    padding-bottom: 30px;
+    padding-bottom: 33px;
     padding-right: 7px;
 }
 #skills h2 {
@@ -100,15 +127,29 @@ h2 {
 }
 .status {
     height: 25px;
-    width: 66%;
     background-color: #c66c49;
+}
+.navbar {
+    justify-content: center;
+}
+.status-1 {
+    width: 64%;
+}
+.status-2 {
+    width: 79%;
+}
+.status-3 {
+    width: 86%;
 }
 ul {
     text-align: center;
     margin: 0 auto;
 }
 .subtitle {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
+}
+.sub {
+    margin-bottom: 27px;
 }
 .header {
     font-weight: 600;
@@ -116,7 +157,7 @@ ul {
 }
 .images {
     padding-top: 25px;
-    max-width: 308px;
+    min-width: 308px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -155,6 +196,11 @@ footer {
 }
 .lists {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.lists div {
+    padding-right: 60px;
 }
 .lists ul {
     padding-left: 40px;
@@ -162,10 +208,95 @@ footer {
     text-align: start;
 }
 .lists li {
-    margin-bottom: 20px;
-    font-family: "Libre Franklin";
+    font-size: 14px;
+    margin-bottom: 15px;
     font-style: normal;
-    font-weight: 400;
+}
+footer h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-left: 40px;
+    justify-content: flex-start;
+}
+.contacts a {
+    color: #333333;
     font-size: 14px;
     line-height: 17px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.contacts i {
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+}
+.contacts .phone {
+    font-size: 12px;
+}
+@media (max-width: 374px) {
+    .lists div {
+        padding-right: 55px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 65px;
+        margin: 0 auto;
+    }
+    nav a {
+        line-height: 29px;
+    }
+    .link {
+        font-weight: 400;
+        font-size: 18px;
+        padding-right: 30px;
+    }
+    #about {
+        padding-top: 70px;
+        text-align: start;
+        padding-bottom: 100px;
+    }
+    #about p {
+        max-width: 1110px;
+        font-size: 18px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+    h2 {
+        text-align: start;
+        padding-bottom: 75px;
+        margin-bottom: 0;
+    }
+    #skills {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    .content {
+        display: flex;
+    }
+    .content img {
+        width: 350px;
+    }
+    #portfolio {
+        padding-top: 70px;
+    }
+    .portfolio-content {
+        display: flex;
+    }
+    #portfolio h3 {
+        text-align: start;
+        font-size: 18px;
+    }
+    #portfolio p {
+        text-align: start;
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
