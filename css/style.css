@@ -5,7 +5,7 @@ header {
     background-position: center;
     background-size: cover;
     min-height: 275px;
-    background-image: url("./img/header.png");
+    background-image: url("/img/header.png");
 }
 header p {
     margin-top: 14px;
