@@ -5,8 +5,7 @@ header {
     background-position: center;
     background-size: cover;
     min-height: 275px;
-    background-image: url("/img/header.jpeg");
-    height: 768px;
+    background-image: url("img/header.jpeg");
 }
 header p {
     margin-top: 14px;
@@ -110,6 +109,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
 }
 .skills-exp ul {
     padding-left: 0;
@@ -120,8 +120,10 @@ h2 {
     min-width: 310px;
 }
 .progress {
-    width: 211px;
-    height: 18px;
+    min-width: 211px;
+    min-height: 18px;
+    height: 100%;
+    width: 69%;
     background-color: #f5d6ab;
     border-radius: 0;
 }
@@ -157,8 +159,8 @@ ul {
 }
 .images {
     padding-top: 25px;
-    min-width: 308px;
-    margin: 0 auto;
+    /* min-width: 308px; */
+    margin: 0 35px;
     justify-content: space-between;
 }
 .left-images {
@@ -184,8 +186,8 @@ ul {
 }
 #portfolio p {
     padding-top: 6px;
-    max-width: 308px;
-    margin: 0 auto;
+    /* min-width: 308px; */
+    margin: 0 35px;
     line-height: 15px;
     text-align: center;
 }
@@ -243,18 +245,59 @@ footer h2 {
         padding-right: 55px;
     }
 }
+@media (max-width: 991px) {
+    #portfolio .arrows {
+        display: none;
+    }
+}
 @media (min-width: 992px) {
     .navbar {
         padding-top: 65px;
+        padding-bottom: 110px;
         margin: 0 auto;
+        justify-content: space-between;
+    }
+    nav {
+        padding-bottom: 200px;
     }
     nav a {
         line-height: 29px;
     }
+    #navbarNavAltMarkup a {
+        
+        padding-left: 50px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .img-overlay{
+        height: 100%;
+        padding-bottom: 238px;
+    }
+    header h1 {
+        font-size: 64px;
+        line-height: 78px;
+        text-align: start;
+        font-weight: 400;
+    }
+    header p {
+        padding-top: 12px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: start;
+        padding-bottom: 70px;
+    }
+    header .latest-works {
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
     .link {
         font-weight: 400;
         font-size: 18px;
-        padding-right: 30px;
+        padding-right: 50px;
     }
     #about {
         padding-top: 70px;
@@ -274,19 +317,23 @@ footer h2 {
     }
     #skills {
         padding-top: 90px;
-        padding-bottom: 100px;
+        padding-bottom: 110px;
     }
     .content {
         display: flex;
+        justify-content: space-between;
     }
     .content img {
         width: 350px;
     }
     #portfolio {
         padding-top: 70px;
+        padding-bottom: 60px;
     }
     .portfolio-content {
         display: flex;
+        padding-top: 12px;
+        justify-content: space-between;
     }
     #portfolio h3 {
         text-align: start;
@@ -298,5 +345,82 @@ footer h2 {
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
+        padding-top: 40px;
+    }
+    #portfolio .images {
+        margin:35px 0 0 0 ;
+    }
+    #portfolio .images img {
+        margin-bottom: 15px;
+    }
+    #portfolio .images .img-pad {
+        margin-bottom: 25px;
+    }
+    #portfolio .arrows {
+        display: block;
+        font-size: 40px;
+        position: relative;
+        left: 25px;
+        bottom: 65px;
+    }
+    footer {
+        padding-top: 70px;
+        padding-bottom: 200px;
+    }
+    footer h2 {
+        padding-bottom: 25px;
+    }
+    footer .lists li {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    footer .lists div {
+        padding: 0;
+    }
+    .lists ul {
+        padding-left: 0;
+    }
+    .lists {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts i {
+        right: 175px;
+        top: 3260px;
+    }
+    .contacts {
+        height: 65px;
+    }
+    footer .lists .right-list {
+        padding-left: 30px;
+    }
+    footer .contacts a {
+        padding-left: 25px;
+        font-size: 18px;
+    }
+    .contacts .phone {
+        font-size: 15px;
+    }
+    #skills p {
+        font-size: 18px;
+    }
+    #skills h2 {
+        margin-bottom: 12px;
+    }
+    .description {
+        min-width: 69%;
+    }
+    .subtitle {
+        padding-bottom: 10px;
+    }
+}
+@media(min-width: 426px){
+    .images .img-pad{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 1024px){
+    .container{
+        padding: 0 10px;
     }
 }
