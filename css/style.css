@@ -67,7 +67,6 @@ h1 {
 }
 #about {
     text-align: justify;
-    min-width: 312px;
     padding-bottom: 5px;
 }
 #about p {
@@ -133,15 +132,6 @@ h2 {
 }
 .navbar {
     justify-content: center;
-}
-.status-1 {
-    width: 64%;
-}
-.status-2 {
-    width: 79%;
-}
-.status-3 {
-    width: 86%;
 }
 ul {
     text-align: center;
@@ -224,6 +214,7 @@ footer h2 {
     padding-top: 10px;
     padding-left: 40px;
     justify-content: flex-start;
+    padding-bottom: 50px;
 }
 .contacts a {
     color: #333333;
@@ -232,7 +223,7 @@ footer h2 {
     padding-bottom: 5px;
     text-decoration: none;
 }
-.contacts i {
+.contacts img {
     position: absolute;
     right: 30px;
     font-size: 30px;
@@ -242,7 +233,7 @@ footer h2 {
 }
 @media (max-width: 374px) {
     .lists div {
-        padding-right: 55px;
+        padding-right: 45px;
     }
 }
 @media (max-width: 991px) {
@@ -384,7 +375,7 @@ footer h2 {
         display: flex;
         justify-content: space-between;
     }
-    .contacts i {
+    .contacts img {
         right: 175px;
         top: 3260px;
     }
